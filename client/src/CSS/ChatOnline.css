@@ -1,0 +1,33 @@
+.ChatOnlineFriend {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.ChatOnlineFriend:hover {
+  background-color: rgb(231, 226, 226);
+}
+.ChatOnlineImgContainer {
+  position: relative;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.ChatOnlineImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .ChatOnlineImg {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,21 @@
+.Conversation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+}
+.Conversation:hover {
+  background-color: rgb(231, 226, 226);
+}
+
+.ConversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.ConversationChat {
+  font-weight: 500;
+}

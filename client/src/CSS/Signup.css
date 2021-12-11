@@ -1,0 +1,54 @@
+.FormBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Form {
+  line-height: 50px;
+  background-color: rgb(143, 248, 116);
+  padding: 0 30px 30px 30px;
+  text-align: center;
+  -webkit-box-shadow: 2px 4px 25px -5px #000000;
+  box-shadow: 2px 4px 25px -5px #000000;
+  border-radius: 10px;
+  text-align: end;
+}
+.errors {
+  color: red;
+  margin: -20px 0 0 0;
+  font-size: 13px;
+}
+
+.lable {
+  margin-left: 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+.input {
+  padding: 6px;
+  border-radius: 5px;
+}
+.Button {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  background-color: rgb(70, 245, 245);
+  padding: 8px;
+  border-radius: 10px;
+}
+.new {
+  color: #000000;
+  font-weight: 500;
+}
+.link {
+  margin: 0 5px 0 0;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+.link:hover {
+  text-decoration: underline;
+  color: rgb(90, 16, 124);
+}

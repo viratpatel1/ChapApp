@@ -1,0 +1,43 @@
+.Message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.Message.own {
+  align-items: flex-end;
+}
+.Message.own .MessageText {
+  background-color: rgb(241, 243, 245);
+}
+/* .MessageImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+} */
+.MessageImg {
+  font-size: 12px;
+}
+.MessageTop {
+  /* align-items: center; */
+  display: flex;
+}
+.MessageText {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: lightgreen;
+  max-width: 300px;
+}
+.MessageBottom {
+  font-size: 12px;
+  margin-top: -10px;
+}
+@media screen and (max-width: 400px) {
+  .MessageBottom {
+    font-size: 10px;
+  }
+  .MessageImg {
+    font-size: 12px;
+  }
+}
