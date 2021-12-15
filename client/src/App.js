@@ -17,19 +17,8 @@ function App()
 {
   const history = useHistory();
   const UserName = localStorage.getItem("UserData");
-  console.log("U ", UserName)
+  // console.log("U ", UserName)
 
-  // useEffect(() =>
-  // {
-  //   if (!UserName)
-  //   {
-  //     history.push("/login")
-  //   } else
-  //   {
-  //     history.push("/")
-  //   }
-
-  // }, [UserName])
 
   return (
     <div className="Messenger">

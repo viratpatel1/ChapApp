@@ -8,7 +8,9 @@ import Conversation from './Conversation';
 import Message from './Message';
 import Navbar from './Navbar';
 
-const Local = `http://localhost:4000/`;
+// const Local = `http://localhost:4000/`;
+const Local = `https://chatsappss.herokuapp.com/`;
+
 
 const Messenger = () =>
 {
@@ -31,9 +33,16 @@ const Messenger = () =>
     // io.emit("getUsers", users);
 
     //For Socket.io
-    useEffect(() =>
+    useEffect(() => 
     {
-        socket.current = io("ws://localhost:8900");
+
+        socket.current = io(Local, {
+            withCredentials: true,
+            transports: ['websocket', 'polling'],
+            extraHeaders: {
+                "my-custom-header": "abcd"
+            }
+        });
         socket.current.on("getMessage", data =>
         {
             setArrivalMessage({

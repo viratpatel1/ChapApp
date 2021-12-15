@@ -2,7 +2,7 @@ import express from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { passform } from "../models/passmodel.js";
-import Auth from "../middleware/Auth.js";
+// import Auth from "../middleware/Auth.js";
 
 
 const router = express.Router()
@@ -22,7 +22,6 @@ router.get("/", async (req, res) =>
     }
 });
 
-
 router.post("/login", async (req, res) =>
 {
     try
@@ -39,7 +38,7 @@ router.post("/login", async (req, res) =>
         {
             // console.log(isPresent)
             const isMatch = await bcrypt.compare(password, isPresent.password)
-            if (isPresent)
+            if (isMatch)
             {
                 const token = await jwt.sign({ id: isPresent._id }, process.env.Key, { expiresIn: "1h" });
                 // const userverify = await jwt.verify(token, process.env.Key);
@@ -65,7 +64,6 @@ router.post("/login", async (req, res) =>
         return res.status(400).json({ message: "Something went Wrong" });
     }
 })
-
 
 router.post("/signup", async (req, res) =>
 {

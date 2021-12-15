@@ -4,8 +4,8 @@ import Avatar from "../image/noavatar.jpg";
 import "../CSS/ChatOnline.css";
 
 
-
-const Local = `http://localhost:4000/`;
+// const Local = `http://localhost:4000/`;
+const Local = `https://chatsappss.herokuapp.com/`;
 
 const ChatOnline = ({ userlist, onlineUsers, currentId, setCurrentChat }) =>
 {
